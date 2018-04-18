@@ -12,6 +12,8 @@
   - [2.1. Setting up IDE](#21-setting-up-ide)
 - [3. Let's Start Coding](#3-lets-start-coding)
   - [3.1. Using the Playground](#31-using-the-playground)
+  - [3.2. Coding and Naming Conventions](#32-coding-and-naming-conventions)
+    - [3.2.1. Naming - File Name](#321-naming---file-name)
 - [4. What's Next](#4-whats-next)
 
 <!-- /TOC -->
@@ -67,6 +69,33 @@ I am using JetBrains GoLand IDE but you can use any IDE you wish, I would recomm
 Go website has a wonderful way to test your code without installing Go libraries on your system, its called [The Go Playground](https://play.golang.org/).
 
 ![The Go Playground](https://github.com/akshaybabloo/Go-Notes/raw/master/assets/images/playground.JPG)
+
+### 3.2. Coding and Naming Conventions
+
+Before we dive into the coding part of Go language, lets look into some coding and naming conventions of this programming language.
+
+#### 3.2.1. Naming - File Name
+
+According to the Go docs, there is no right or wrong way to name your file - you can either use underscores or camelCase or Pascal Case or small letters, but most Go developers use underscore to name their files. The underscore contradicts the standard library files, for example:
+
+```
+go/src/mime/encodedword.go
+go/src/mime/encodedword_test.go
+```
+
+`encodedword.go` is the name of the main file where other methods are available and their tests can be found in `encodedword_test.go`. Simple as.
+
+Some times you wish to run the file on windows, linux or both. In that case you can name your files something like this
+
+```
+filename.go - compiles universally
+filename_windows.go - compiles on windows only
+filename_unix.go - compiles on posix.
+filename_amd64.go - compiles on 64-bit processors only
+filename_arm.go - compiles on arm processors only
+```
+
+Go build takes care of what to use depending on your operating system, for more information see [https://golang.org/pkg/go/build/](https://golang.org/pkg/go/build/)
 
 ## 4. What's Next
 
