@@ -8,6 +8,9 @@
   - [1.1. Windows](#11-windows)
   - [1.2. macOS](#12-macos)
   - [1.3. Linux](#13-linux)
+- [2. Setup](#2-setup)
+- [3. Let's Start Coding](#3-lets-start-coding)
+- [4. What's Next](#4-whats-next)
 
 <!-- /TOC -->
 
@@ -47,4 +50,12 @@ You can test it by typing in `go version`.
 
 > Note: You can also add file to your home file by just replacing the `/usr/local/` with `/home/user-name`, `user-name` being your user folder.
 
+## 2. Setup
 
+Windows and macOS should automaticall update the path to Go, if not you will have to add the path - `installed-folder/go/bin`, where installed-path is where you have installed the Go language. For Linux, see above.
+
+## 3. Let's Start Coding
+
+## 4. What's Next
+
+In the next tutorial (coming soon) we will look into using Go to develop a RESTful web service.
