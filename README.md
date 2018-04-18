@@ -58,7 +58,7 @@ Windows and macOS should automatically update the path to Go, if not you will ha
 
 ### 2.1. Setting up IDE
 
-I am using JetBrains GoLand IDE but you can use any IDE you wish, I would recommend using VS Code.
+I am using JetBrains GoLand IDE but you can use any IDE you wish, I would recommend using VSCode.
 
 ## 3. Let's Start Coding
 
