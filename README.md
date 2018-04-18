@@ -66,6 +66,8 @@ I am using JetBrains GoLand IDE but you can use any IDE you wish, I would recomm
 
 Go website has a wonderful way to test your code without installing Go libraries on your system, its called [The Go Playground](https://play.golang.org/).
 
+![The Go Playground](https://github.com/akshaybabloo/Go-Notes/raw/master/assets/images/playground.JPG)
+
 ## 4. What's Next
 
 In the next tutorial (coming soon) we will look into using Go to develop a RESTful web service.
