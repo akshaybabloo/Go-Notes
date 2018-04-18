@@ -101,11 +101,21 @@ Go build takes care of what to use depending on your operating system, for more 
 
 ## 4. Let's Start Coding
 
+> Note: Ignore `_#` (where `#` is the number) as the filename below, the number represents the flow of things to start and end with.
+
+**Code Structure**
+
+```
+src
+|
+`- helloworld_1.go
+```
+
 ### 4.1. Hello World
 
-[Source](http://link)
+[Source](https://github.com/akshaybabloo/Go-Notes/blob/master/src/helloworld_1.go)
 
-Say we have a file called `helloworld_1.go` (ignore underscore, that's only for getting the flow), which has the following content.
+Say we have a file called `helloworld_1.go`, which has the following content.
 
 ```go
 package main // The main method should always be in "main" package
@@ -117,7 +127,7 @@ func main() { // Go always starts at "main" method
 }
 ```
 
-To run the file you should use - `go build filename.go` this compile the file to `filename.exe` (in windows). In this case it will look something like this:
+To run the file you should use - `go build filename.go` this compiles the file to `filename.exe` (in windows). In this case it will look something like this:
 
 ![Go build helloworld_1.go](https://github.com/akshaybabloo/Go-Notes/raw/master/assets/images/go_build.JPG)
 
