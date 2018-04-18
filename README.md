@@ -4,7 +4,7 @@
 
 <!-- TOC -->
 
-- [1. Instillation](#1-instillation)
+- [1. Installation](#1-installation)
   - [1.1. Windows](#11-windows)
   - [1.2. macOS](#12-macos)
   - [1.3. Linux](#13-linux)
@@ -14,25 +14,25 @@
 
 <!-- /TOC -->
 
-## 1. Instillation
+## 1. Installation
 
-Instillation is straight forward, just download the executable file and follow the instruction.
+Installation is straightforward, just download the executable file and follow the instruction.
 
 ### 1.1. Windows
 
-For windows you will have to download the MSI executable file. Remember that MSI is a 64-bit so make sure you have a 64-bit processor.
+For windows, you will have to download the MSI executable file. Remember that MSI is a 64-bit so make sure you have a 64-bit processor.
 
-Goto [https://golang.org/dl/](https://golang.org/dl/) and download the latest version, for example for Go 1.10.1 it is `go1.10.1.windows-amd64.msi`. Once installed, you check the it by opening your command prompt and type in `go version`.
+Goto [https://golang.org/dl/](https://golang.org/dl/) and download the latest version, for example for Go 1.10.1 it is `go1.10.1.windows-amd64.msi`. Once installed, you check it by opening your command prompt and type in `go version`.
 
 ### 1.2. macOS
 
-A pri-built package is avaliable to download and install. Just follow the instillation window. Download the latest version at [https://golang.org/dl/](https://golang.org/dl/), for example, for Go 1.10.1 the file name is `go1.10.1.darwin-amd64.pkg`
+A pre-built package is available to download and install. Just follow the installation window. Download the latest version at [https://golang.org/dl/](https://golang.org/dl/), for example, for Go 1.10.1 the file name is `go1.10.1.darwin-amd64.pkg`
 
 ### 1.3. Linux
 
-For Linux distribution there is no pri-built package, but it is easy to install. Just download the latest *.tar.gz file from [https://golang.org/dl/](https://golang.org/dl/), for example, for Go 1.10.1 the file is `go1.10.1.linux-amd64.tar.gz`.
+For Linux distribution, there is no pre-built package, but it is easy to install. Just download the latest *.tar.gz file from [https://golang.org/dl/](https://golang.org/dl/), for example, for Go 1.10.1 the file is `go1.10.1.linux-amd64.tar.gz`.
 
-Once download follow the steps:
+Once downloaded, follow the steps:
 
 1. Open your terminal and change the directory to where you download the tar.gz file, then type in:
 
@@ -48,11 +48,11 @@ export PATH=$PATH:/usr/local/go/bin
 
 You can test it by typing in `go version`.
 
-> Note: You can also add file to your home file by just replacing the `/usr/local/` with `/home/user-name`, `user-name` being your user folder.
+> Note: You can also add file to your home file by just replacing the `/usr/local/` with `/home/username`, `username` being your user folder.
 
 ## 2. Setup
 
-Windows and macOS should automaticall update the path to Go, if not you will have to add the path - `installed-folder/go/bin`, where installed-path is where you have installed the Go language. For Linux, see above.
+Windows and macOS should automatically update the path to Go, if not you will have to add the path - `installed-folder/go/bin`, where installed-path is where you have installed the Go language. For Linux, see above.
 
 ## 3. Let's Start Coding
 
