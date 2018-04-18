@@ -9,7 +9,9 @@
   - [1.2. macOS](#12-macos)
   - [1.3. Linux](#13-linux)
 - [2. Setup](#2-setup)
+  - [2.1. Setting up IDE](#21-setting-up-ide)
 - [3. Let's Start Coding](#3-lets-start-coding)
+  - [3.1. Using the Playground](#31-using-the-playground)
 - [4. What's Next](#4-whats-next)
 
 <!-- /TOC -->
@@ -54,7 +56,15 @@ You can test it by typing in `go version`.
 
 Windows and macOS should automatically update the path to Go, if not you will have to add the path - `installed-folder/go/bin`, where installed-path is where you have installed the Go language. For Linux, see above.
 
+### 2.1. Setting up IDE
+
+I am using JetBrains GoLand IDE but you can use any IDE you wish, I would recommend using VS Code.
+
 ## 3. Let's Start Coding
+
+### 3.1. Using the Playground
+
+Go website has a wonderful way to test your code without installing Go libraries on your system, its called [The Go Playground](https://play.golang.org/).
 
 ## 4. What's Next
 
