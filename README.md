@@ -133,4 +133,4 @@ To run the file you should use - `go build filename.go` this compiles the file t
 
 ## 5. What's Next
 
-In the next tutorial (coming soon) we will look into using Go to develop a RESTful web service.
+In the next tutorial (coming soon) we will look into using Go to develop a RESTful web application.
