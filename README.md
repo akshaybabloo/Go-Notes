@@ -10,11 +10,13 @@
   - [1.3. Linux](#13-linux)
 - [2. Setup](#2-setup)
   - [2.1. Setting up IDE](#21-setting-up-ide)
-- [3. Let's Start Coding](#3-lets-start-coding)
+- [3. Getting Stated and Conventions](#3-getting-stated-and-conventions)
   - [3.1. Using the Playground](#31-using-the-playground)
   - [3.2. Coding and Naming Conventions](#32-coding-and-naming-conventions)
     - [3.2.1. Naming - File Name](#321-naming---file-name)
-- [4. What's Next](#4-whats-next)
+- [4. Let's Start Coding](#4-lets-start-coding)
+  - [4.1. Hello World](#41-hello-world)
+- [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
 
@@ -62,7 +64,7 @@ Windows and macOS should automatically update the path to Go, if not you will ha
 
 I am using JetBrains GoLand IDE but you can use any IDE you wish, I would recommend using VSCode.
 
-## 3. Let's Start Coding
+## 3. Getting Stated and Conventions
 
 ### 3.1. Using the Playground
 
@@ -72,7 +74,7 @@ Go website has a wonderful way to test your code without installing Go libraries
 
 ### 3.2. Coding and Naming Conventions
 
-Before we dive into the coding part of Go language, lets look into some coding and naming conventions of this programming language.
+Before we dive into the coding part of Go language, let's look into some coding and naming conventions of this programming language.
 
 #### 3.2.1. Naming - File Name
 
@@ -83,9 +85,9 @@ go/src/mime/encodedword.go
 go/src/mime/encodedword_test.go
 ```
 
-`encodedword.go` is the name of the main file where other methods are available and their tests can be found in `encodedword_test.go`. Simple as.
+`encodedword.go` is the name of the main file where other methods are available, and their tests can be found in `encodedword_test.go`. Simple as.
 
-Some times you wish to run the file on windows, linux or both. In that case you can name your files something like this
+Sometimes you wish to run the file on Windows, Linux or both. In that case, you can name your files something like this
 
 ```
 filename.go - compiles universally
@@ -97,6 +99,28 @@ filename_arm.go - compiles on arm processors only
 
 Go build takes care of what to use depending on your operating system, for more information see [https://golang.org/pkg/go/build/](https://golang.org/pkg/go/build/)
 
-## 4. What's Next
+## 4. Let's Start Coding
+
+### 4.1. Hello World
+
+[Source](http://link)
+
+Say we have a file called `helloworld_1.go` (ignore underscore, that's only for getting the flow), which has the following content.
+
+```go
+package main // The main method should always be in "main" package
+
+import "fmt" // Standard Go library for formatted I/O
+
+func main() { // Go always starts at "main" method
+  fmt.Println("hello world") // outputs to I/O with new line.
+}
+```
+
+To run the file you should use - `go build filename.go` this compile the file to `filename.exe` (in windows). In this case it will look something like this:
+
+![Go build helloworld_1.go](https://github.com/akshaybabloo/Go-Notes/raw/master/assets/images/go_build.JPG)
+
+## 5. What's Next
 
 In the next tutorial (coming soon) we will look into using Go to develop a RESTful web service.
