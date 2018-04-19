@@ -13,7 +13,9 @@
 - [3. Getting Stated and Conventions](#3-getting-stated-and-conventions)
   - [3.1. Using the Playground](#31-using-the-playground)
   - [3.2. Coding and Naming Conventions](#32-coding-and-naming-conventions)
-    - [3.2.1. Naming - File Name](#321-naming---file-name)
+    - [3.2.1. Naming Conventions](#321-naming-conventions)
+      - [3.2.1.1. File Names](#3211-file-names)
+      - [3.2.1.2. Function Names](#3212-function-names)
 - [4. Let's Start Coding](#4-lets-start-coding)
   - [4.1. Hello World](#41-hello-world)
 - [5. What's Next](#5-whats-next)
@@ -76,7 +78,9 @@ Go website has a wonderful way to test your code without installing Go libraries
 
 Before we dive into the coding part of Go language, let's look into some coding and naming conventions of this programming language.
 
-#### 3.2.1. Naming - File Name
+#### 3.2.1. Naming Conventions
+
+##### 3.2.1.1. File Names
 
 According to the Go docs, there is no right or wrong way to name your file - you can either use underscores or camelCase or Pascal Case or small letters, but most Go developers use underscore to name their files. The underscore contradicts the standard library files, for example:
 
@@ -98,6 +102,39 @@ filename_arm.go - compiles on arm processors only
 ```
 
 Go build takes care of what to use depending on your operating system, for more information see [https://golang.org/pkg/go/build/](https://golang.org/pkg/go/build/)
+
+##### 3.2.1.2. Function Names
+
+Function always starts with the keyword `func`, the name given to the functions are of two types; one thats starts with a captal letter and the other that starts with small letter.
+
+For example:
+
+```go
+package main
+
+import (
+	"strconv"
+	"fmt"
+	"reflect"
+)
+
+func main() {
+	sum := Add(1, 2)
+
+	fmt.Println(sum)
+	fmt.Println(reflect.TypeOf(sum))
+}
+
+func Add(a int, b int) string {
+	return toString(a + b)
+}
+
+func toString(c int) string {
+	return strconv.Itoa(c)
+}
+```
+
+Let's consider the above example, the `Add()` function takes in two numbers, adds it and converts it to a string by using `toString()` function. The `Add()` function is available throughout the application, as in it can be imported to other go files. Whereas the `toString()` can only be used locally.
 
 ## 4. Let's Start Coding
 
