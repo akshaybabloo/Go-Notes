@@ -16,6 +16,10 @@
     - [3.2.1. Naming Conventions](#321-naming-conventions)
       - [3.2.1.1. File Names](#3211-file-names)
       - [3.2.1.2. Function Names](#3212-function-names)
+  - [3.3. Go Command Line](#33-go-command-line)
+    - [3.3.1. go](#331-go)
+    - [3.3.2. godoc](#332-godoc)
+    - [3.3.3. gofmt](#333-gofmt)
 - [4. Let's Start Coding](#4-lets-start-coding)
   - [4.1. Hello World](#41-hello-world)
 - [5. What's Next](#5-whats-next)
@@ -152,7 +156,23 @@ func toString(c int) string {
 
 Let's consider the above example, the `Add()` function takes in two numbers, adds it and converts it to a string by using `toString()` function. The `Add()` function is available throughout the application, as in it can be imported to other go files. Whereas the `toString()` can only be used locally.
 
-### 3.3. GO Command Line
+### 3.3. Go Command Line
+
+Under `c:\go\bin` there are three commands:
+
+![Go CLI](https://github.com/akshaybabloo/Go-Notes/raw/master/assets/images/go_cli.JPG)
+
+#### 3.3.1. go
+
+This is the primary command you will be using throughout the tutorial. It incorporates more than a dozen commands in it. We will look into most of them in this tutorial. If you type in `go` you will see all the available commands and its description.
+
+#### 3.3.2. godoc
+
+`godoc` is similar to `javadoc` but for Go packages. If you enter `godoc fmt`, it will display all the documentation related to `fmt` package. Typing `godoc` itself will print out all the command flags it can take.
+
+#### 3.3.3. gofmt
+
+This command can be used to format your source code. You can use this by typing `gofmt filename.go` this will only print out the formatted text from the file but does not write it, to make it write the file you should add `-w` flag - `gofmt -w filename.go`.
 
 ## 4. Let's Start Coding
 
