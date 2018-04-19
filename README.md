@@ -105,7 +105,7 @@ Go build takes care of what to use depending on your operating system, for more 
 
 ##### 3.2.1.2. Function Names
 
-Function always starts with the keyword `func`, the name given to the functions are of two types; one thats starts with a captal letter and the other that starts with small letter.
+A function always starts with the keyword `func`, the name given to it are of two types; one that begins with a capital letter and the other that begins with a small letter.
 
 For example:
 
