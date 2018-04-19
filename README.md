@@ -129,28 +129,30 @@ For example:
 package main
 
 import (
-	"strconv"
-	"fmt"
-	"reflect"
+  "strconv"
+  "fmt"
+  "reflect"
 )
 
 func main() {
-	sum := Add(1, 2)
+  sum := Add(1, 2)
 
-	fmt.Println(sum)
-	fmt.Println(reflect.TypeOf(sum))
+  fmt.Println(sum)
+  fmt.Println(reflect.TypeOf(sum))
 }
 
 func Add(a int, b int) string {
-	return toString(a + b)
+  return toString(a + b)
 }
 
 func toString(c int) string {
-	return strconv.Itoa(c)
+  return strconv.Itoa(c)
 }
 ```
 
 Let's consider the above example, the `Add()` function takes in two numbers, adds it and converts it to a string by using `toString()` function. The `Add()` function is available throughout the application, as in it can be imported to other go files. Whereas the `toString()` can only be used locally.
+
+### 3.3. GO Command Line
 
 ## 4. Let's Start Coding
 
