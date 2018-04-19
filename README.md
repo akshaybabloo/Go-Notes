@@ -74,6 +74,22 @@ Go website has a wonderful way to test your code without installing Go libraries
 
 ![The Go Playground](https://github.com/akshaybabloo/Go-Notes/raw/master/assets/images/playground.JPG)
 
+Go also provides a way to run playground (you will need internet though) on your system. Type in:
+
+```bash
+> godoc -http=:6060 -play -index
+```
+
+Now open your browser and type in `localhost:6060`, this should open playground.
+
+There are few limitations when using the Go playground as its being run on a secured server that has no access to external world:
+
+1. You cannot run HTTP requests or host your web server.
+2. The playground fakes the files system so that your IO works correctly.
+3. The date and time are always constant - November 10, 2009, at 11:00 p.m.
+4. You can work with only one source code at a time; you cannot have multiple go file and import them locally unlike you do on your system.
+5. Moreover, it is free.
+
 ### 3.2. Coding and Naming Conventions
 
 Before we dive into the coding part of Go language, let's look into some coding and naming conventions of this programming language.
