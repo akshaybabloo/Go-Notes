@@ -20,6 +20,7 @@
     - [3.3.1. go](#331-go)
     - [3.3.2. godoc](#332-godoc)
     - [3.3.3. gofmt](#333-gofmt)
+  - [3.4. Workspace](#34-workspace)
 - [4. Let's Start Coding](#4-lets-start-coding)
   - [4.1. Hello World](#41-hello-world)
 - [5. What's Next](#5-whats-next)
@@ -173,6 +174,32 @@ This is the primary command you will be using throughout the tutorial. It incorp
 #### 3.3.3. gofmt
 
 This command can be used to format your source code. You can use this by typing `gofmt filename.go` this will only print out the formatted text from the file but does not write it, to make it write the file you should add `-w` flag - `gofmt -w filename.go`.
+
+### 3.4. Workspace
+
+Go follows some strict norms on how you create your workspace structure. The root directory can be any name but should not contain any space or special characters.
+
+The structure should look something like this:
+
+```
+workspacename
+|
++- src
++- bin
+`- pkg
+```
+
+`src` is for your source files, `bin` for executables and `pkg` for external libraries.
+
+Once, the folder has been set; the next thing is to create a `GOPATH` to do so type in:
+
+```
+set GOTPATH=%USERPROFILE%\gowork
+```
+
+> Note: I would create this directory in my `home` folder. It is up to you where to create it.
+
+You can check all the Go environments by typing in `go env`. When you change directory to the `src` folder with a go file in it and type in `go install` it creates an executable file in the `bin` folder.
 
 ## 4. Let's Start Coding
 
