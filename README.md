@@ -23,6 +23,7 @@
   - [3.4. Workspace](#34-workspace)
 - [4. Let's Start Coding](#4-lets-start-coding)
   - [4.1. Hello World](#41-hello-world)
+  - [4.2. String Formatting](#42-string-formatting)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -232,6 +233,14 @@ func main() { // Go always starts at "main" method
 To run the file you should use - `go build filename.go` this compiles the file to `filename.exe` (in windows). In this case it will look something like this:
 
 ![Go build helloworld_1.go](https://github.com/akshaybabloo/Go-Notes/raw/master/assets/images/go_build.JPG)
+
+### 4.2. String Formatting
+
+[source](https://github.com/akshaybabloo/Go-Notes/blob/master/src/stringformats_2.go)
+
+This section looks into [pkg](https://golang.org/pkg/fmt/) package.
+
+A function in Go can return `n` number of objects, which includes `errors`.
 
 ## 5. What's Next
 
