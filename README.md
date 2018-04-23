@@ -242,6 +242,8 @@ This section looks into [pkg](https://golang.org/pkg/fmt/) package.
 
 A function in Go can return `n` number of objects, which includes `errors`.
 
+For example `fmt.Println` can have multiple returns.
+
 ## 5. What's Next
 
 In the next tutorial (coming soon) we will look into using Go to develop a RESTful web application.
