@@ -233,6 +233,10 @@ To run the file you should use - `go build filename.go` this compiles the file t
 
 ![Go build helloworld_1.go](https://github.com/akshaybabloo/Go-Notes/raw/master/assets/images/go_build.JPG)
 
+Or you can also use `go run` to build the file in `temp` folder and run it. Something like:
+
+![Go build helloworld_1.go](https://github.com/akshaybabloo/Go-Notes/raw/master/assets/images/go_run.JPG)
+
 ### 4.2. String Formatting
 
 [source](https://github.com/akshaybabloo/Go-Notes/blob/master/src/stringformats_2.go)
