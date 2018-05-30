@@ -24,6 +24,7 @@
 - [4. Let's Start Coding](#4-lets-start-coding)
   - [4.1. Hello World](#41-hello-world)
   - [4.2. String Formatting](#42-string-formatting)
+- [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
 
@@ -246,9 +247,6 @@ This section looks into [pkg](https://golang.org/pkg/fmt/) package.
 A function in Go can return `n` number of objects, which includes `errors`.
 
 For example `fmt.Println` can have multiple returns:
-
-```
-
 
 
 ## 5. What's Next
