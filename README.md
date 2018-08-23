@@ -248,6 +248,13 @@ A function in Go can return `n` number of objects, which includes `errors`.
 
 For example `fmt.Println` can have multiple returns:
 
+```go
+stringLength, err := fmt.Println(str1, str2)
+```
+
+If there is no error, the content in the `stringLength` will be returned and the `err` will be equal to `nil`.
+
+
 
 ## 5. What's Next
 
