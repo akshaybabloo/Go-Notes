@@ -32,6 +32,7 @@
       - [4.2.1.2. Constants](#4212-constants)
       - [4.2.1.3. Data Types](#4213-data-types)
     - [4.2.2. Working with Strings](#422-working-with-strings)
+    - [4.2.3. Using Math Operator and Math Package](#423-using-math-operator-and-math-package)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -372,6 +373,41 @@ All data types are spelled in lower case.
 [source](https://github.com/akshaybabloo/Go-Notes/blob/master/src/workingwithstrings_4.go)
 
 Go language is case sensitive as in `hello != Hello`. For more information on `strings` see [http://golang.com/pkg/strings/](https://golang.com/pkg/strings/)
+
+#### 4.2.3. Using Math Operator and Math Package
+
+[source](https://github.com/akshaybabloo/Go-Notes/blob/master/src/math_5.go)
+
+Math Operation
+
+| Operator | Definition |
+|:--------:|:----------:|
+|     +    |     Add    |
+|     -    |  Subtract  |
+|     *    |  Multiply  |
+|     /    |   Divide   |
+|     %    |  Remainder |
+
+Bitwise Operation
+
+| Operator |  Definition |
+|:--------:|:-----------:|
+|     &    | Bitwise AND |
+|     |    |  Bitwise OR |
+|     ^    | Bitwise XOR |
+|    &^    |   Bitclear  |
+|    >>    | Right Shift |
+|    <<    |  Left Shift |
+
+In Go, numeric types don't implicitly convert, i.e you cannot add a float to int, the only way you can add ghem is by converting an int to float. For example:
+
+```go
+int1 := 30
+float1 :=30.1
+fmt.Println(float64(int1) + float1)
+```
+
+For more complex math problems see [http://golang.com/pkg/math/](https://golang.com/pkg/math/).
 
 ## 5. What's Next
 
