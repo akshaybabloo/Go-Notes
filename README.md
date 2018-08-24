@@ -23,8 +23,9 @@
   - [3.4. Workspace](#34-workspace)
 - [4. Let's Start Coding](#4-lets-start-coding)
   - [4.1. Go Essential](#41-go-essential)
-  - [4.2. String Formatting](#42-string-formatting)
-  - [4.3. Getting Input from Console](#43-getting-input-from-console)
+    - [4.1.1. Hello World](#411-hello-world)
+    - [4.1.2. String Formatting](#412-string-formatting)
+    - [4.1.3. Getting Input from Console](#413-getting-input-from-console)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -225,6 +226,8 @@ Some helpful Go CLI commands:
   1. `go run` - Builds and runs a Go file. Example `go run filename.go`
   2. `go build` - Build an executable file. Example `go build filename.go`
 
+#### 4.1.1. Hello World
+
 [Source](https://github.com/akshaybabloo/Go-Notes/blob/master/src/helloworld_1.go)
 
 Say we have a file called `helloworld_1.go`, which has the following content.
@@ -247,7 +250,7 @@ Or you can also use `go run` to build the file in `temp` folder and run it. Some
 
 ![Go build helloworld_1.go](https://github.com/akshaybabloo/Go-Notes/raw/master/assets/images/go_run.JPG)
 
-### 4.2. String Formatting
+#### 4.1.2. String Formatting
 
 [source](https://github.com/akshaybabloo/Go-Notes/blob/master/src/stringformats_2.go)
 
@@ -263,7 +266,7 @@ stringLength, err := fmt.Println(str1, str2)
 
 If there is no error, the content in the `stringLength` will be returned and the `err` will be equal to `nil`.
 
-### 4.3. Getting Input from Console
+#### 4.1.3. Getting Input from Console
 
 [source](https://github.com/akshaybabloo/Go-Notes/blob/master/src/consoleinput_3.go)
 
