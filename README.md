@@ -24,6 +24,7 @@
 - [4. Let's Start Coding](#4-lets-start-coding)
   - [4.1. Hello World](#41-hello-world)
   - [4.2. String Formatting](#42-string-formatting)
+  - [4.3. Getting Input from Console](#43-getting-input-from-console)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -254,7 +255,25 @@ stringLength, err := fmt.Println(str1, str2)
 
 If there is no error, the content in the `stringLength` will be returned and the `err` will be equal to `nil`.
 
+### 4.3. Getting Input from Console
 
+[source](https://github.com/akshaybabloo/Go-Notes/blob/master/src/consoleinput_3.go)
+
+For user input you can use `fmt.Scanln(&ref)` and reference to a string variable, but the problem with the `Scanln` is that whenever it encounters a space, the word after the space is given to a new variable.
+
+for example:
+
+```go
+var s string
+var s2 string
+
+// Send in the reference of the string s
+fmt.Scanln(&s, &s2)  // hello hi
+// Print the value of it.
+fmt.Println(s, s2)  // hello hi
+```
+
+To take the input from the user as is, you will have to use different packages, such as `buffio` and `os`.
 
 ## 5. What's Next
 
