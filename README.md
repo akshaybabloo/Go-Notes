@@ -34,6 +34,7 @@
     - [4.2.2. Working with Strings](#422-working-with-strings)
     - [4.2.3. Using Math Operator and Math Package](#423-using-math-operator-and-math-package)
     - [4.2.4. Date and Time](#424-date-and-time)
+  - [4.3. Managing Complex Types and collections](#43-managing-complex-types-and-collections)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -236,7 +237,7 @@ Some helpful Go CLI commands:
 
 #### 4.1.1. Hello World
 
-[Source](https://github.com/akshaybabloo/Go-Notes/blob/master/src/helloworld_1.go)
+[Source - helloworld_1.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/helloworld_1.go)
 
 Say we have a file called `helloworld_1.go`, which has the following content.
 
@@ -260,7 +261,7 @@ Or you can also use `go run` to build the file in `temp` folder and run it. Some
 
 #### 4.1.2. String Formatting
 
-[source](https://github.com/akshaybabloo/Go-Notes/blob/master/src/stringformats_2.go)
+[Source - stringformats_2.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/stringformats_2.go)
 
 This section looks into [pkg](https://golang.org/pkg/fmt/) package.
 
@@ -276,7 +277,7 @@ If there is no error, the content in the `stringLength` will be returned and the
 
 #### 4.1.3. Getting Input from Console
 
-[source](https://github.com/akshaybabloo/Go-Notes/blob/master/src/consoleinput_3.go)
+[Source - consoleinput_3.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/consoleinput_3.go)
 
 For user input you can use `fmt.Scanln(&ref)` and reference to a string variable, but the problem with the `Scanln` is that whenever it encounters a space, the word after the space is given to a new variable.
 
@@ -292,9 +293,11 @@ fmt.Scanln(&s, &s2)  // hello hi
 fmt.Println(s, s2)  // hello hi
 ```
 
-To take the input from the user as is, you will have to use different packages, such as `buffio` and `os`.
+To take the input from the user as is, you will have to use different packages, such as `bufio` and `os`.
 
 ### 4.2. Managing Values
+
+In this section we will look into formatting string, date time, date types.
 
 #### 4.2.1. Exploring variables, constants and types
 
@@ -371,13 +374,13 @@ All data types are spelled in lower case.
 
 #### 4.2.2. Working with Strings
 
-[source](https://github.com/akshaybabloo/Go-Notes/blob/master/src/workingwithstrings_4.go)
+[Source - workingwithstrings_4.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/workingwithstrings_4.go)
 
 Go language is case sensitive as in `hello != Hello`. For more information on `strings` see [http://golang.com/pkg/strings/](https://golang.com/pkg/strings/)
 
 #### 4.2.3. Using Math Operator and Math Package
 
-[source](https://github.com/akshaybabloo/Go-Notes/blob/master/src/math_5.go)
+[Source - math_5.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/math_5.go)
 
 Math Operation
 
@@ -412,7 +415,7 @@ For more complex math problems see [http://golang.com/pkg/math/](https://golang.
 
 #### 4.2.4. Date and Time
 
-[Source](https://github.com/akshaybabloo/Go-Notes/blob/master/src/datetime_6.go)
+[Source - datetime_6.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/datetime_6.go)
 
 When trying to format date and time make sure you format based on the constant numbers given in the package.
 
@@ -432,6 +435,10 @@ For example:
 shortFormat := "2/1/06"
 fmt.Println("Today is", time.Now().Format(shortFormat))
 ```
+
+### 4.3. Managing Complex Types and collections
+
+[Source - pointers_7.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/pointers_7.go)
 
 ## 5. What's Next
 
