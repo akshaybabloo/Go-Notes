@@ -31,6 +31,7 @@
       - [4.2.1.1. Implicit vs Explicit](#4211-implicit-vs-explicit)
       - [4.2.1.2. Constants](#4212-constants)
       - [4.2.1.3. Data Types](#4213-data-types)
+    - [4.2.2. Working with Strings](#422-working-with-strings)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -366,6 +367,11 @@ All data types are spelled in lower case.
   Pointers
   ```
 
+#### 4.2.2. Working with Strings
+
+[source](https://github.com/akshaybabloo/Go-Notes/blob/master/src/workingwithstrings_4.go)
+
+Go language is case sensitive as in `hello != Hello`. For more information on `strings` see [http://golang.com/pkg/strings/](https://golang.com/pkg/strings/)
 
 ## 5. What's Next
 
