@@ -33,6 +33,7 @@
       - [4.2.1.3. Data Types](#4213-data-types)
     - [4.2.2. Working with Strings](#422-working-with-strings)
     - [4.2.3. Using Math Operator and Math Package](#423-using-math-operator-and-math-package)
+    - [4.2.4. Date and Time](#424-date-and-time)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -408,6 +409,29 @@ fmt.Println(float64(int1) + float1)
 ```
 
 For more complex math problems see [http://golang.com/pkg/math/](https://golang.com/pkg/math/).
+
+#### 4.2.4. Date and Time
+
+[Source](https://github.com/akshaybabloo/Go-Notes/blob/master/src/datetime_6.go)
+
+When trying to format date and time make sure you format based on the constant numbers given in the package.
+
+```
+1 - Month
+2 - Day
+3 - Hour
+4 - Minutes
+5 - Seconds
+6 - Year
+7 - Timezone
+```
+
+For example:
+
+```go
+shortFormat := "2/1/06"
+fmt.Println("Today is", time.Now().Format(shortFormat))
+```
 
 ## 5. What's Next
 
