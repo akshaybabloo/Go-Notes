@@ -22,7 +22,7 @@
     - [3.3.3. gofmt](#333-gofmt)
   - [3.4. Workspace](#34-workspace)
 - [4. Let's Start Coding](#4-lets-start-coding)
-  - [4.1. Hello World](#41-hello-world)
+  - [4.1. Go Essential](#41-go-essential)
   - [4.2. String Formatting](#42-string-formatting)
   - [4.3. Getting Input from Console](#43-getting-input-from-console)
 - [5. What's Next](#5-whats-next)
@@ -215,7 +215,15 @@ src
 `- helloworld_1.go
 ```
 
-### 4.1. Hello World
+### 4.1. Go Essential
+
+Some helpful Go CLI commands:
+
+1. `godoc` - Used to get the documentation for a given package. Example `godoc fmt`.
+2. `gofmt` - To format a Go file to its specifications. Example `gofmt -w filename.go` `-w` will write the file.
+3. `go` - It has a lot of sub-commands, in this notes we will be using mostly `go run`
+  1. `go run` - Builds and runs a Go file. Example `go run filename.go`
+  2. `go build` - Build an executable file. Example `go build filename.go`
 
 [Source](https://github.com/akshaybabloo/Go-Notes/blob/master/src/helloworld_1.go)
 
