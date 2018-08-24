@@ -27,6 +27,10 @@
     - [4.1.2. String Formatting](#412-string-formatting)
     - [4.1.3. Getting Input from Console](#413-getting-input-from-console)
   - [4.2. Managing Values](#42-managing-values)
+    - [4.2.1. Exploring variables, constants and types](#421-exploring-variables-constants-and-types)
+      - [4.2.1.1. Implicit vs Explicit](#4211-implicit-vs-explicit)
+      - [4.2.1.2. Constants](#4212-constants)
+      - [4.2.1.3. Data Types](#4213-data-types)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -288,6 +292,81 @@ fmt.Println(s, s2)  // hello hi
 To take the input from the user as is, you will have to use different packages, such as `buffio` and `os`.
 
 ### 4.2. Managing Values
+
+#### 4.2.1. Exploring variables, constants and types
+
+##### 4.2.1.1. Implicit vs Explicit
+
+Using `var` keyword and an assignment operator with a data type you can declare a value.
+
+```go
+var anInteger int = 30
+var aString string = "Hello!"
+```
+
+Go allows you to implicitly declare a variable without using a data type and the `var` keyword and replace them by using `:=`.
+
+```go
+anInteger := 30
+aString := "Hello!"
+```
+
+Above code is still static and cannot be changed.
+
+##### 4.2.1.2. Constants
+
+Explicit: 
+
+```go
+const anInteger int = 30
+const aString string = "Hello!"
+```
+
+Implicit:
+
+```go
+const anInteger = 30
+const aString = "Hello!"
+```
+
+##### 4.2.1.3. Data Types
+
+All data types are spelled in lower case.
+
+1. `bool` - Booleans values
+2. `string` - String type
+3. Integers:
+  1. Fixed Integers:
+  ```
+  uint8 uint16 uint32 uint64
+  int8 int16 int32 int64
+  ```
+  2. Aliases: They could be a 32 bit or a 64 bit depending upon the operating system. 
+  ```
+  byte uint int uintptr
+  ```
+4. Floating values:
+  ```
+  float32 float64
+  ```
+5. Complex numbers:
+  ```
+  complex64 complex128
+  ```
+6. Data collections:
+  ```
+  Arrays Slices Maps Structs
+  ```
+7. Language organization:
+  ```
+  Functions Interfaces Channels
+  ```
+8. Data Management:
+  ```
+  Pointers
+  ```
+
+
 ## 5. What's Next
 
 In the next tutorial (coming soon) we will look into using Go to develop a RESTful web application.
