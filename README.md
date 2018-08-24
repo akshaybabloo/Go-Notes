@@ -26,6 +26,7 @@
     - [4.1.1. Hello World](#411-hello-world)
     - [4.1.2. String Formatting](#412-string-formatting)
     - [4.1.3. Getting Input from Console](#413-getting-input-from-console)
+  - [4.2. Managing Values](#42-managing-values)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -286,6 +287,7 @@ fmt.Println(s, s2)  // hello hi
 
 To take the input from the user as is, you will have to use different packages, such as `buffio` and `os`.
 
+### 4.2. Managing Values
 ## 5. What's Next
 
 In the next tutorial (coming soon) we will look into using Go to develop a RESTful web application.
