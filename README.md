@@ -393,7 +393,7 @@ Bitwise Operation
 | Operator |  Definition |
 |:--------:|:-----------:|
 |     &    | Bitwise AND |
-|     |    |  Bitwise OR |
+|     \|   |  Bitwise OR |
 |     ^    | Bitwise XOR |
 |    &^    |   Bitclear  |
 |    >>    | Right Shift |
