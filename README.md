@@ -1,6 +1,6 @@
 # Introduction to Go
 
-> The code in this repository is based on Go 1.10.*. It should work on other versions as well.
+> The code in this repository is based on Go 1.11.*. It should work on other versions as well.
 
 <!-- TOC -->
 
