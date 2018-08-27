@@ -35,6 +35,7 @@
     - [4.2.3. Using Math Operator and Math Package](#423-using-math-operator-and-math-package)
     - [4.2.4. Date and Time](#424-date-and-time)
   - [4.3. Managing Complex Types and collections](#43-managing-complex-types-and-collections)
+    - [4.3.1. Pointers](#431-pointers)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -438,7 +439,11 @@ fmt.Println("Today is", time.Now().Format(shortFormat))
 
 ### 4.3. Managing Complex Types and collections
 
+#### 4.3.1. Pointers
+
 [Source - pointers_7.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/pointers_7.go)
+
+Like C/C++, Go also support pointers natively.
 
 ## 5. What's Next
 
