@@ -439,6 +439,8 @@ fmt.Println("Today is", time.Now().Format(shortFormat))
 
 ### 4.3. Managing Complex Types and collections
 
+In this section we will look into some complex types such as pointers and collections such as arrays, maps and Structs.
+
 #### 4.3.1. Pointers
 
 [Source - pointers_7.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/pointers_7.go)
