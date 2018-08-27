@@ -36,6 +36,7 @@
     - [4.2.4. Date and Time](#424-date-and-time)
   - [4.3. Managing Complex Types and collections](#43-managing-complex-types-and-collections)
     - [4.3.1. Pointers](#431-pointers)
+    - [4.3.2. Arrays](#432-arrays)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -446,6 +447,14 @@ In this section we will look into some complex types such as pointers and collec
 [Source - pointers_7.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/pointers_7.go)
 
 Like C/C++, Go also support pointers natively.
+
+#### 4.3.2. Arrays
+
+[Source - arrays_8.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/arrays_8.go)
+
+All the contents in an array are of same type. Like Java, the first index always starts with `0`.
+
+There are some memory implication when using arrays in Go, unlike C/C++ (where arrays are pointers) arrays in Go are values i.e. when assigning one array to another copies all the contents of it. Passing an array to the function will pass a copy of the array and not the pointer.
 
 ## 5. What's Next
 
