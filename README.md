@@ -37,6 +37,7 @@
   - [4.3. Managing Complex Types and collections](#43-managing-complex-types-and-collections)
     - [4.3.1. Pointers](#431-pointers)
     - [4.3.2. Arrays](#432-arrays)
+    - [4.3.3. Slices](#433-slices)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -323,7 +324,7 @@ Above code is still static and cannot be changed.
 
 ##### 4.2.1.2. Constants
 
-Explicit: 
+Explicit:
 
 ```go
 const anInteger int = 30
@@ -349,7 +350,7 @@ All data types are spelled in lower case.
   uint8 uint16 uint32 uint64
   int8 int16 int32 int64
   ```
-  2. Aliases: They could be a 32 bit or a 64 bit depending upon the operating system. 
+  2. Aliases: They could be a 32 bit or a 64 bit depending upon the operating system.
   ```
   byte uint int uintptr
   ```
@@ -455,6 +456,12 @@ Like C/C++, Go also support pointers natively.
 All the contents in an array are of same type. Like Java, the first index always starts with `0`.
 
 There are some memory implication when using arrays in Go, unlike C/C++ (where arrays are pointers) arrays in Go are values i.e. when assigning one array to another copies all the contents of it. Passing an array to the function will pass a copy of the array and not the pointer.
+
+#### 4.3.3. Slices
+
+[Source - slices_9.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/slices_9.go)
+
+A slice is an abstraction layer that sits on top of an Array. Like arrays all the contents in the slices are of the same type, but unlike it, slices can are resizeable and can be sorted easily.
 
 ## 5. What's Next
 
