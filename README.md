@@ -38,6 +38,11 @@
     - [4.3.1. Pointers](#431-pointers)
     - [4.3.2. Arrays](#432-arrays)
     - [4.3.3. Slices](#433-slices)
+    - [4.3.4. Memory](#434-memory)
+      - [4.3.4.1. The `new()` Function](#4341-the-new-function)
+      - [4.3.4.2. The `make()` Function](#4342-the-make-function)
+      - [4.3.4.3. Creating `nil` Objects](#4343-creating-nil-objects)
+      - [4.3.4.4. Memory Deallocation](#4344-memory-deallocation)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -462,6 +467,51 @@ There are some memory implication when using arrays in Go, unlike C/C++ (where a
 [Source - slices_9.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/slices_9.go)
 
 A slice is an abstraction layer that sits on top of an Array. Like arrays all the contents in the slices are of the same type, but unlike it, slices can are resizeable and can be sorted easily.
+
+#### 4.3.4. Memory
+
+Go's runtime is statistically linked into each compiled application. Go's memory is managed my the runtime on a different thread, that means memory allocation and deallocation is completely done automatically in the background.
+
+To understand how the memory allocation works there two function that you'll need to understand - `make()` and `new()`, these function can be used to initialise `maps`, `slices` and `channels`.
+
+In most cases you will like be using `make()` instead of `new()`.
+
+##### 4.3.4.1. The `new()` Function
+
+1. Allocates but does not initialise memory
+2. Results in zeroed storage but returns a memory address
+
+##### 4.3.4.2. The `make()` Function
+
+1. Allocates and initialise memory
+2. Results in non-zeroed storage but returns a memory address
+
+##### 4.3.4.3. Creating `nil` Objects
+
+You must always initialise complex objects before adding values, declaring them without `make()` will cause a _panic_.
+
+For example:
+
+```go
+var m map[string]int // key value pair of string and integer.
+m["key"] = 10
+fmt.Println(m)
+```
+
+With the above code you will get a _panic_ error at the second line as you cannot add a value to zeroed memory. To fix this you can do;
+
+```go
+m := make(map[string]int) // key value pair of string and integer.
+m["key"] = 10
+fmt.Println(m)
+// map[key:42]
+```
+
+##### 4.3.4.4. Memory Deallocation
+
+Memory is deallocated by using garbage collector (GC), only the objects that are out of scope or set to `nil` are eligible.
+
+For more information on GC you can go to [https://golang.org/pkg/runtime/](https://golang.org/pkg/runtime/).
 
 ## 5. What's Next
 
