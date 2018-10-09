@@ -43,6 +43,7 @@
       - [4.3.4.2. The `make()` Function](#4342-the-make-function)
       - [4.3.4.3. Creating `nil` Objects](#4343-creating-nil-objects)
       - [4.3.4.4. Memory Deallocation](#4344-memory-deallocation)
+    - [4.3.5. Maps](#435-maps)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -512,6 +513,12 @@ fmt.Println(m)
 Memory is deallocated by using garbage collector (GC), only the objects that are out of scope or set to `nil` are eligible.
 
 For more information on GC you can go to [https://golang.org/pkg/runtime/](https://golang.org/pkg/runtime/).
+
+#### 4.3.5. Maps
+
+[Source - maps_10.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/maps_10.go)
+
+Maps are unordered collections of key-value pairs aka hash table.
 
 ## 5. What's Next
 
