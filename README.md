@@ -48,6 +48,7 @@
   - [4.4. Managing Program Flow](#44-managing-program-flow)
     - [4.4.1. Conditional Logic](#441-conditional-logic)
     - [4.4.2. Switch Statement](#442-switch-statement)
+    - [4.4.3. Loops](#443-loops)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -567,6 +568,12 @@ This is because the way the Go lexer see the line feeds.
 [Source - switch_13.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/switch_13.go)
 
 Go's switch statement improvises C's and Java's. Like the recent versions of Java, Go can evaluate simple types, not just constants and strings. The code flow jumps from one case to another once the case if found, this means you don't have to add the redundant `break` statement.
+
+#### 4.4.3. Loops
+
+[Source - loops_14.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/loops_14.go)
+
+Unlike Java there is no `while` statement in Go, but there are extended version of the `for` loop, which will be seen in this section.
 
 ## 5. What's Next
 
