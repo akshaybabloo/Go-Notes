@@ -44,6 +44,7 @@
       - [4.3.4.3. Creating `nil` Objects](#4343-creating-nil-objects)
       - [4.3.4.4. Memory Deallocation](#4344-memory-deallocation)
     - [4.3.5. Maps](#435-maps)
+    - [4.3.6. Data Structure](#436-data-structure)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -519,6 +520,14 @@ For more information on GC you can go to [https://golang.org/pkg/runtime/](https
 [Source - maps_10.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/maps_10.go)
 
 Maps are unordered collections of key-value pairs aka hash table.
+
+#### 4.3.6. Data Structure
+
+[Source - structs_11.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/structs_11.go)
+
+Structs in Go have similar function to C's struct and Java's classes. They both contain data and methods, but unlike Java, Go doesn't have an inheritance model.
+
+In this section we will look into how to use struct to store data.
 
 ## 5. What's Next
 
