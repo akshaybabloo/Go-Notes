@@ -45,6 +45,8 @@
       - [4.3.4.4. Memory Deallocation](#4344-memory-deallocation)
     - [4.3.5. Maps](#435-maps)
     - [4.3.6. Data Structure](#436-data-structure)
+  - [4.4. Managing Program Flow](#44-managing-program-flow)
+    - [4.4.1. Conditional Logic](#441-conditional-logic)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -528,6 +530,36 @@ Maps are unordered collections of key-value pairs aka hash table.
 Structs in Go have similar function to C's struct and Java's classes. They both contain data and methods, but unlike Java, Go doesn't have an inheritance model.
 
 In this section we will look into how to use struct to store data.
+
+### 4.4. Managing Program Flow
+
+#### 4.4.1. Conditional Logic
+
+[Source - conditions_12.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/conditions_12.go)
+
+In this section we will look at how the conditions in Go differs from C.
+
+You will have to remember that the `else` keyword should come after the braces. Example:
+
+```go
+
+// This is wrong. you will get an error
+if ...{
+  ...
+}
+else {
+  ...
+}
+
+// Instead use this
+if ... {
+  ...
+} else {
+  ...
+}
+```
+
+This is because the way the Go lexer see the line feeds.
 
 ## 5. What's Next
 
