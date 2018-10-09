@@ -47,6 +47,7 @@
     - [4.3.6. Data Structure](#436-data-structure)
   - [4.4. Managing Program Flow](#44-managing-program-flow)
     - [4.4.1. Conditional Logic](#441-conditional-logic)
+    - [4.4.2. Switch Statement](#442-switch-statement)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -560,6 +561,12 @@ if ... {
 ```
 
 This is because the way the Go lexer see the line feeds.
+
+#### 4.4.2. Switch Statement
+
+[Source - switch_13.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/switch_13.go)
+
+Go's switch statement improvises C's and Java's. Like the recent versions of Java, Go can evaluate simple types, not just constants and strings. The code flow jumps from one case to another once the case if found, this means you don't have to add the redundant `break` statement.
 
 ## 5. What's Next
 
