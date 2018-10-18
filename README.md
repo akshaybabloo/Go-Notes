@@ -51,6 +51,7 @@
     - [4.4.3. Loops](#443-loops)
   - [4.5. Structuring Go Code](#45-structuring-go-code)
     - [4.5.1. Defining and Calling a Function](#451-defining-and-calling-a-function)
+    - [4.5.2. Multiple Return Value for a Function](#452-multiple-return-value-for-a-function)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -586,6 +587,12 @@ Unlike Java there is no `while` statement in Go, but there are extended version 
 Go is organised as packages, each of these packages has functions. Any function starting with a small letter is private to that package but if it's starting with a capital letter it's public and be used outside the package.
 
 Unlike Java, Go has no function overloading in Go that means you'll need to create a different function for each output you want.
+
+#### 4.5.2. Multiple Return Value for a Function
+
+[Source - multiple_return_values_16.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/multiple_return_values_16.go)
+
+Functions in Go can return multiple values, its the second is usually an error vale (we will talk about this in handling errors).
 
 ## 5. What's Next
 
