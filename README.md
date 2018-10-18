@@ -583,7 +583,7 @@ Unlike Java there is no `while` statement in Go, but there are extended version 
 
 [Source - functions_15.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/functions_15.go)
 
-Go is organised as packages, each of these packages has functions. Any function starting with a small letter is private to that package but if it's starting with a capital letter it's public to be used outside the package.
+Go is organised as packages, each of these packages has functions. Any function starting with a small letter is private to that package but if it's starting with a capital letter it's public and be used outside the package.
 
 Unlike Java, Go has no function overloading in Go that means you'll need to create a different function for each output you want.
 
