@@ -49,6 +49,8 @@
     - [4.4.1. Conditional Logic](#441-conditional-logic)
     - [4.4.2. Switch Statement](#442-switch-statement)
     - [4.4.3. Loops](#443-loops)
+  - [4.5. Structuring Go Code](#45-structuring-go-code)
+    - [4.5.1. Defining and Calling a Function](#451-defining-and-calling-a-function)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -574,6 +576,16 @@ Go's switch statement improvises C's and Java's. Like the recent versions of Jav
 [Source - loops_14.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/loops_14.go)
 
 Unlike Java there is no `while` statement in Go, but there are extended version of the `for` loop, which will be seen in this section.
+
+### 4.5. Structuring Go Code
+
+#### 4.5.1. Defining and Calling a Function
+
+[Source - functions_15.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/functions_15.go)
+
+Go is organised as packages, each of these packages has functions. Any function starting with a small letter is private to that package but if it's starting with a capital letter it's public to be used outside the package.
+
+Unlike Java, Go has no function overloading in Go that means you'll need to create a different function for each output you want.
 
 ## 5. What's Next
 
