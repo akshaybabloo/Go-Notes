@@ -52,6 +52,7 @@
   - [4.5. Structuring Go Code](#45-structuring-go-code)
     - [4.5.1. Defining and Calling a Function](#451-defining-and-calling-a-function)
     - [4.5.2. Multiple Return Value for a Function](#452-multiple-return-value-for-a-function)
+    - [4.5.3. Creating Packages as Function Libraries](#453-creating-packages-as-function-libraries)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -593,6 +594,14 @@ Unlike Java, Go has no function overloading in Go that means you'll need to crea
 [Source - multiple_return_values_16.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/multiple_return_values_16.go)
 
 Functions in Go can return multiple values, its the second is usually an error vale (we will talk about this in handling errors).
+
+#### 4.5.3. Creating Packages as Function Libraries
+
+[Source - packages_17](https://github.com/akshaybabloo/Go-Notes/blob/master/src/packages_17)
+
+For this thing to work, you will have to setup a [workspace](#34-workspace) as mentioned at the starting of the tutorial. Once you have this, create a file as `<GOPATH>/src/libraries/library.go` and copy the `main` from [multiple_return_values_16.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/multiple_return_values_16.go) to it. After this is done, next create another file under `<GOPATH>/src/stringutil/stringutil.go`, copy `FullName` and `FullNameNakedReturn` to it or create any public functions.
+
+Open your terminal, change your directory to `<GOPATH>/src/libraries/library.go` and type in `go install`, this will create a executable file under `<GOPATH>/bin/libraries.exe`.
 
 ## 5. What's Next
 
