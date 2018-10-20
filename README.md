@@ -1,6 +1,7 @@
 # Introduction to Go
 
 > Note 1: The code in this repository is based on Go 1.11.*. It should work on other versions as well.
+
 > Note 2: The file names do not follow the Go language convention, it's there only to show you the flow of this tutorial.
 
 <!-- TOC -->
