@@ -61,6 +61,7 @@
     - [4.5.7. Defer Function Call](#457-defer-function-call)
   - [4.6. Working with Files and web](#46-working-with-files-and-web)
     - [4.6.1. Writing to a Text File](#461-writing-to-a-text-file)
+    - [4.6.2. Reading from a Text File](#462-reading-from-a-text-file)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -640,6 +641,10 @@ Deferred statements are executed last in first out order.
 #### 4.6.1. Writing to a Text File
 
 [Source - fileWrite_22.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/fileWrite_22.go)
+
+#### 4.6.2. Reading from a Text File
+
+[Source - fileRead_23.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/fileRead_23.go)
 
 ## 5. What's Next
 
