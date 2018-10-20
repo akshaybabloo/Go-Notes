@@ -56,6 +56,7 @@
     - [4.5.4. Methods](#454-methods)
     - [4.5.5. Interfaces](#455-interfaces)
     - [4.5.6. Handling Errors](#456-handling-errors)
+    - [4.5.7. Defer Function Call](#457-defer-function-call)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -623,6 +624,12 @@ Unlike Java, Go does not have an `extends` keyword, rather an method that has th
 [Source - errors_20.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/errors_20.go)
 
 Unlike other programming languages, Go does not provide classic exception handling like `try...catch..` block.
+
+#### 4.5.7. Defer Function Call
+
+[Source - defer_21.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/defer_21.go)
+
+Deferred statements are executed last in first out order.
 
 ## 5. What's Next
 
