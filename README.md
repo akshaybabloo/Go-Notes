@@ -53,6 +53,7 @@
     - [4.5.1. Defining and Calling a Function](#451-defining-and-calling-a-function)
     - [4.5.2. Multiple Return Value for a Function](#452-multiple-return-value-for-a-function)
     - [4.5.3. Creating Packages as Function Libraries](#453-creating-packages-as-function-libraries)
+    - [4.5.4. Methods](#454-methods)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -602,6 +603,12 @@ Functions in Go can return multiple values, its the second is usually an error v
 For this thing to work, you will have to setup a [workspace](#34-workspace) as mentioned at the starting of the tutorial. Once you have this, create a file as `<GOPATH>/src/libraries/library.go` and copy the `main` from [multiple_return_values_16.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/multiple_return_values_16.go) to it. After this is done, next create another file under `<GOPATH>/src/stringutil/stringutil.go`, copy `FullName` and `FullNameNakedReturn` to it or create any public functions.
 
 Open your terminal, change your directory to `<GOPATH>/src/libraries/library.go` and type in `go install`, this will create a executable file under `<GOPATH>/bin/libraries.exe`.
+
+#### 4.5.4. Methods
+
+[Source - methods_18.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/methods_18.go)
+
+Unlike Java or C++ where a method is a member of a `class`, in Go, a method is a member of `type`.
 
 ## 5. What's Next
 
