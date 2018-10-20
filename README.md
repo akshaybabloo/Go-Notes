@@ -58,6 +58,8 @@
     - [4.5.5. Interfaces](#455-interfaces)
     - [4.5.6. Handling Errors](#456-handling-errors)
     - [4.5.7. Defer Function Call](#457-defer-function-call)
+  - [4.6. Working with Files and web](#46-working-with-files-and-web)
+    - [4.6.1. Writing to a Text File](#461-writing-to-a-text-file)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -631,6 +633,12 @@ Unlike other programming languages, Go does not provide classic exception handli
 [Source - defer_21.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/defer_21.go)
 
 Deferred statements are executed last in first out order.
+
+### 4.6. Working with Files and web
+
+#### 4.6.1. Writing to a Text File
+
+[Source - fileWrite_22.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/fileWrite_22.go)
 
 ## 5. What's Next
 
