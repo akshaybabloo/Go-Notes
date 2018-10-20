@@ -54,6 +54,7 @@
     - [4.5.2. Multiple Return Value for a Function](#452-multiple-return-value-for-a-function)
     - [4.5.3. Creating Packages as Function Libraries](#453-creating-packages-as-function-libraries)
     - [4.5.4. Methods](#454-methods)
+    - [4.5.5. Interfaces](#455-interfaces)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -609,6 +610,12 @@ Open your terminal, change your directory to `<GOPATH>/src/libraries/library.go`
 [Source - methods_18.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/methods_18.go)
 
 Unlike Java or C++ where a method is a member of a `class`, in Go, a method is a member of `type`.
+
+#### 4.5.5. Interfaces
+
+[Source - interfaces_19.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/interfaces_19.go)
+
+Unlike Java, Go does not have an `extends` keyword, rather an method that has the same type and name is an interface.
 
 ## 5. What's Next
 
