@@ -64,6 +64,7 @@
     - [4.6.2. Reading from a Text File](#462-reading-from-a-text-file)
     - [4.6.3. Walking Directory Tree](#463-walking-directory-tree)
     - [4.6.4. HTTP File Read](#464-http-file-read)
+    - [4.6.5. Read and Write JSON Data](#465-read-and-write-json-data)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -656,6 +657,9 @@ Deferred statements are executed last in first out order.
 
 [Source - httpFileRead_25.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/httpFileRead_25.go)
 
+#### 4.6.5. Read and Write JSON Data
+
+[Source - json_26.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/json_26.go)
 
 ## 5. What's Next
 
