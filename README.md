@@ -63,6 +63,7 @@
     - [4.6.1. Writing to a Text File](#461-writing-to-a-text-file)
     - [4.6.2. Reading from a Text File](#462-reading-from-a-text-file)
     - [4.6.3. Walking Directory Tree](#463-walking-directory-tree)
+    - [4.6.4. HTTP File Read](#464-http-file-read)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -650,6 +651,10 @@ Deferred statements are executed last in first out order.
 #### 4.6.3. Walking Directory Tree
 
 [Source - walkingDirectory_24.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/walkingDirectory_24.go)
+
+#### 4.6.4. HTTP File Read
+
+[Source - httpFileRead_25.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/httpFileRead_25.go)
 
 
 ## 5. What's Next
