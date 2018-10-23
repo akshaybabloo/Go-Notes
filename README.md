@@ -65,6 +65,7 @@
     - [4.6.3. Walking Directory Tree](#463-walking-directory-tree)
     - [4.6.4. HTTP File Read](#464-http-file-read)
     - [4.6.5. Read and Write JSON Data](#465-read-and-write-json-data)
+    - [4.6.6. Simple HTTP Server](#466-simple-http-server)
 - [5. What's Next](#5-whats-next)
 
 <!-- /TOC -->
@@ -660,6 +661,10 @@ Deferred statements are executed last in first out order.
 #### 4.6.5. Read and Write JSON Data
 
 [Source - json_26.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/json_26.go)
+
+#### 4.6.6. Simple HTTP Server
+
+[Source - httpServer_27.go](https://github.com/akshaybabloo/Go-Notes/blob/master/src/httpServer_27.go)
 
 ## 5. What's Next
 
